@@ -13,13 +13,12 @@ export function App() {
                     className="w-full bg-transparent text-3xl font-semibold tracking-tight outline-none placeholder:text-slate-500"
                 />
             </form>
-            <div className="h-px bg-slate-700"/>
+            <div className="h-px bg-slate-700" />
 
             <div className="grid grid-cols-3 gap-6 auto-rows-[250px]">
                 <NewNoteCard />
-                <NoteCard />
-                <NoteCard />
-                <NoteCard />
+                <NoteCard note={{date: new Date(2010, 6, 3), content: "Hello World"}} />
+                <NoteCard note={{date: new Date(), content: "Hello World"}} />
             </div>
         </div>
     );
